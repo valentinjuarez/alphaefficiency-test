@@ -1,0 +1,173 @@
+==================================================
+SECTION 1 — MAIN SECTION
+==================================================
+
+Frame:
+- 1920 x 760
+
+Layout:
+- Full-width hero section
+- Left side background: #F9F9F9
+- Right side background panel: #FFD900
+- Decorative circle on left side
+- Decorative circle on right side
+
+Navigation:
+- Logo: 138 x 62
+- Items:
+  - About Us: 66 x 17
+  - Book Online: 87 x 17
+  - Weight Loss Programs: 159 x 17
+  - Real Patient Stories: 137 x 17
+  - Locations: 68 x 17
+  - Blog: 33 x 17
+  - Shop: 37 x 17
+  - Subscription: 89 x 17
+
+Main content:
+- Title block: 437 x 272
+- Description block: 459 x 78
+- CTA button: 215 x 40
+- Countdown card: 629 x 321
+
+Text:
+- Title: Chicago’s Free Medical Check-Up and Weight Loss Consultation
+- Description: Limited spots available due to the Physicians schedule and the high demand for service. No credit card or insurance required.
+- Button text: Book my appointment
+- Countdown label: Your offer ends in:
+- Countdown units:
+  - Days
+  - Hours
+  - Minutes
+  - Seconds
+
+Fonts:
+- Nav:
+  - Font: Montserrat
+  - Weight: 400
+  - Size: 14px
+  - Line-height: 100%
+
+- Title:
+  - Font: Libre Baskerville
+  - Weight: 400
+  - Size: 45px
+  - Line-height: 150%
+
+- Countdown label:
+  - Font: Montserrat
+  - Weight: 400
+  - Size: 18px
+  - Line-height: 158%
+  - Align: center
+
+- Countdown unit text:
+  - Font: Montserrat
+  - Weight: 500
+  - Size: 18px
+  - Line-height: 178%
+  - Letter-spacing: 32.5%
+  - Align: center
+
+- Countdown numbers:
+  - Font: Montserrat
+  - Size: 50px
+
+- Description:
+  - Font: Montserrat
+  - Weight: 400
+  - Size: 16px
+  - Line-height: 160%
+
+- Button:
+  - Font: Montserrat
+  - Weight: 600
+  - Size: 16px
+  - Line-height: 100%
+  - Align: center
+
+Colors:
+- Main background: #F9F9F9
+- Right panel background: #FFD900
+- Accent color (title highlight + button): #DD71C6
+
+Decorative elements:
+- Right ellipse:
+  - Size: 436 x 436
+  - Position: top 123px, left 1651px
+  - Opacity: 0.15
+  - Border width: 28px
+
+- Left ellipse:
+  - Size: 386 x 386
+  - Position: top 187px, left -91px
+  - Opacity: 1
+  - Border width: 28px
+
+Functionality:
+- Countdown
+- Burger menu on tablet/mobile
+
+Notes:
+- Full-width composition
+- Right yellow panel is part of the hero layout
+- Countdown overlaps visually with the yellow panel
+- Desktop navigation is horizontal
+
+
+==================================================
+SECTION 2 — STATS SECTION
+==================================================
+
+Frame:
+- 1920 x 570
+
+Layout:
+- Full-width section
+- Main background: #DD71C6
+- Decorative circle on left side
+- Decorative circle on right side
+- Four centered stat cards in a horizontal row
+- CTA button below the cards
+
+Main content:
+- 4 stat cards: 249 x 264 each
+- CTA button: 215 x 40
+
+Cards:
+- Card 1:
+  - Icon: briefcase
+  - Main text: 10+
+  - Description: years in business
+
+- Card 2:
+  - Icon: smile
+  - Main text: 2000+
+  - Description: positive reviews
+
+- Card 3:
+  - Icon: chat / message
+  - Main text: 15.000+
+  - Description: satisfied clients
+
+- Card 4:
+  - Icon: heartbeat / medical line
+  - Main text: Many+
+  - Description: nurses and physician assistants on staff
+
+Text:
+- Button text: Book my appointment
+
+Decorative elements:
+- Left ellipse block: 185 x 185
+- Right ellipse block: 306x308
+
+Functionality:
+- CTA button
+- Responsive card layout for tablet/mobile
+
+Notes:
+- Cards are aligned horizontally on desktop
+- Button is centered below the cards
+- Decorative circles are part of the section background
+- On smaller screens, cards will likely stack or wrap
