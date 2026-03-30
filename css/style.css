@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Montserrat, Arial, sans-serif;
+	background: #f9f9f9;
+
+}
+
+/* ─── HERO SECTION ─────────────────────────────────── */
+.seccion-hero {
+	position: relative;
+	overflow: hidden;
+	min-height: 100svh;
+}
+
+.contenedor-hero {
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	padding: 20px 20px 40px;
+}
+
+/* ─── HEADER ─────────────────────────────────── */
+.encabezado-hero {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	z-index: 10;
+}
+
+.logo-link {
+	display: inline-flex;
+}
+
+.logo {
+	width: 89px;
+	height: auto;
+}
+
+.menu-desktop {
+	display: none;
+}
+
+.boton-menu {
+	border: 0;
+	background: transparent;
+	padding: 0;
+	cursor: pointer;
+	z-index: 20;
+}
+
+/* ─── MOBILE MENU ─────────────────────────────────── */
+.menu-movil {
+	display: none;
+	position: fixed;
+	inset: 0;
+	background: #fff;
+	z-index: 100;
+	padding: 80px 32px 32px;
+}
+
+.menu-movil.abierto {
+	display: block;
+}
+
+.menu-movil .lista-menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.menu-movil .lista-menu a {
+	text-decoration: none;
+	color: #2f2f2f;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+/* ─── HERO CONTENT ─────────────────────────────────── */
+.contenido-hero {
+	margin-top: 24px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+/* ─── YELLOW PANEL (mobile: right half background) ───── */
+.panel-amarillo {
+	position: absolute;
+	top: -85px;           /* bleed to top of section */
+	right: -20px;         /* bleed to right edge */
+	width: 60%;
+	bottom: -50px;        /* bleed to bottom of section */
+	background: #ffd900;
+	border-top-left-radius: 48px;
+	z-index: 0;
+}
+
+.circulo-panel {
+	position: absolute;
+	border: 24px solid rgba(255, 255, 255, 0.25);
+	border-radius: 50%;
+}
+.circulo-dos {
+	width: 200px;
+	height: 200px;
+	right: -55px;
+	top: 165px;
+}
+
+/* ─── TEXT BLOCK ─────────────────────────────────── */
+.bloque-texto {
+	position: relative;
+	z-index: 5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.titulo-principal {
+	
+	max-width: 281px;
+	font-family: "Libre Baskerville", Georgia, serif;
+	font-size: 30px;
+	line-height: 1.6;
+	font-weight: 400;
+	color: #333333;
+}
+
+.texto-destacado,
+.texto-cupos strong {
+	color: #dd71c6;
+}
+
+.texto-cupos {
+	margin: 0 0 18px;
+    line-height: 1.58;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+/* ─── COUNTDOWN CARD ─────────────────────────────────── */
+.tarjeta-tiempo {
+	width: 100%;
+	max-width: 320px;
+	background: linear-gradient(107.9deg, rgba(255, 255, 255, 0.51) 9.7%, rgba(255, 255, 255, 0.49) 88.76%);
+    backdrop-filter: blur(40px);
+    box-shadow: 0px 4px 40px 0px #0000001A;
+	border-radius: 20px;
+	padding: 26px 36px 26px 36px;
+    gap: 10px;
+	margin: 0 auto 18px;
+}
+
+.etiqueta-tiempo {
+	margin: 6px 0 24px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 400;
+	color: #2f2f2f;
+}
+
+.grilla-tiempo {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 6px;
+	text-align: center;
+}
+
+.unidad-tiempo {
+	display: block;
+	font-size: 8px;
+	color: #1691e2;
+    line-height: 178%;
+	letter-spacing: 32.5%;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.valor-tiempo {
+	display: block;
+	margin-top: 25px;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 178%;
+}
+
+/* ─── DESCRIPTION ─────────────────────────────────── */
+.descripcion-hero {
+	max-width: 281px;
+    margin-top: 15px;
+	font-size: 14px;
+	line-height: 1.6;
+	color: #2f2f2f;
+}
+
+/* ─── CTA BUTTON ─────────────────────────────────── */
+.boton-principal {
+	display: inline-block;
+	margin-top: 20px;
+    gap: 10px;
+	width: 215px;
+	text-align: center;
+	background: #dd71c6;
+    box-shadow: 0px 4px 20px 0px #0000001A;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 15px;
+	padding: 10px 14px 10px 14px;
+	border-radius: 4px;
+	transition: background 0.2s ease;
+}
+
+.boton-principal:hover {
+	background: #c957b0;
+}
+
+/* ─── STATS SECTION ────────────────────────────────── */
+.seccion-estadisticas {
+	position: relative;
+	overflow: hidden;
+	background: #dd71c6;
+	padding: 32px 20px 40px;
+}
+
+.fondo-estadisticas {
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+}
+
+.circulo-estadistica {
+	position: absolute;
+	border-radius: 50%;
+	border: 28px solid rgba(255, 255, 255, 0.15);
+}
+
+.circulo-estadistica-izq {
+	width: 125px;
+	height: 125px;
+	left: -71px;
+	top: 225px;
+}
+
+.circulo-estadistica-der {
+	width: 209px;
+	height: 209px;
+	left: 297px;
+	top: 80px;
+}
+
+.contenedor-estadisticas {
+	max-width: 300px;
+	margin: 0 auto;
+	position: relative;
+    box-shadow: 0px 4px 40px 0px #00000008;
+	z-index: 2;
+}
+
+.grilla-estadisticas {
+	display: grid;
+	grid-template-columns: repeat(2, 134px);
+	justify-content: center;
+	gap: 15px;
+}
+
+.tarjeta-estadistica {
+	background: #ffffff;
+	width: 134px;
+	height: 157px;
+	border-radius: 20px;
+	padding: 16px 10px 12px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6px;
+}
+
+.icono-estadistica {
+	width: 24px;
+	height: 24px;
+	object-fit: contain;
+	margin-bottom: 5px;
+}
+
+.numero-estadistica {
+	margin: 0;
+	font-size: 18px;
+	line-height: 1.1;
+	font-weight: 400;
+	color: #333333;
+}
+
+.texto-estadistica {
+	font-size: 12px;
+    text-align:center;
+	line-height: 158%;
+	color: #333333;
+}
+
+.boton-estadisticas {
+	display: block;
+	margin: 20px auto 0;
+    gap: 10px;
+	width: 215px;
+	text-align: center;
+	background: #FFD900;
+    box-shadow: 0px 4px 20px 0px #0000001A;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 15px;
+	padding: 10px 14px 10px 14px;
+	border-radius: 4px;
+	transition: background 0.2s ease;
+}
+
+/* ─── DESKTOP (992px+) ─────────────────────────────── */
+@media (min-width: 992px) {
+	.contenedor-hero {
+		padding: 26px 32px 64px;
+	}
+
+	.logo {
+		width: 138px;
+	}
+
+	.menu-desktop {
+		display: block;
+	}
+
+	.lista-menu {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		gap: 22px;
+	}
+
+	.lista-menu a {
+		text-decoration: none;
+		color: #2f2f2f;
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	.boton-menu {
+		display: none;
+	}
+
+	.contenido-hero {
+		margin-top: 48px;
+	}
+
+	.bloque-texto {
+		align-items: flex-start;
+		text-align: left;
+	}
+
+	.panel-amarillo {
+		top: 0;
+		right: -32px;
+		bottom: -64px;
+		width: 48%;
+	}
+
+	.circulo-dos {
+		width: 220px;
+		height: 220px;
+		right: -80px;
+		top: 130px;
+	}
+
+	.titulo-principal {
+		max-width: 640px;
+		font-size: 64px;
+	}
+
+	.texto-cupos {
+		font-size: 36px;
+	}
+
+	.tarjeta-tiempo {
+		max-width: 520px;
+		padding: 24px 20px;
+		border-radius: 28px;
+	}
+
+	.etiqueta-tiempo {
+		font-size: 24px;
+		margin-bottom: 18px;
+	}
+
+	.unidad-tiempo {
+		font-size: 12px;
+		letter-spacing: 2px;
+	}
+
+	.valor-tiempo {
+		font-size: 36px;
+		margin-top: 8px;
+	}
+
+	.descripcion-hero {
+		max-width: 520px;
+		margin: 0 0 24px;
+		font-size: 18px;
+	}
+
+	.boton-principal {
+		font-size: 16px;
+		padding: 14px 20px;
+	}
+
+	.seccion-estadisticas {
+		padding: 80px 32px 72px;
+	}
+
+	.contenedor-estadisticas {
+		max-width: 1160px;
+	}
+
+	.grilla-estadisticas {
+		grid-template-columns: repeat(4, 1fr);
+		gap: 24px;
+		justify-content: stretch;
+	}
+
+	.tarjeta-estadistica {
+		width: auto;
+		height: auto;
+		min-height: 264px;
+		border-radius: 28px;
+		padding: 18px 12px 16px;
+		justify-content: center;
+		gap: 0;
+	}
+
+	.icono-estadistica {
+		width: 34px;
+		height: 34px;
+		margin-bottom: 14px;
+	}
+
+	.numero-estadistica {
+		font-size: 50px;
+	}
+
+	.texto-estadistica {
+		font-size: 18px;
+	}
+
+	.boton-estadisticas {
+		margin: 34px auto 0;
+	}
+
+	.circulo-estadistica-izq {
+		width: 185px;
+		height: 185px;
+		left: -92px;
+		top: 22%;
+	}
+
+	.circulo-estadistica-der {
+		width: 306px;
+		height: 308px;
+		left: auto;
+		right: -153px;
+		top: 42%;
+	}
+
+}

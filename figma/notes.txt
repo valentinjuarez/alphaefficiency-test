@@ -2,17 +2,21 @@
 SECTION 1 — MAIN SECTION
 ==================================================
 
-Frame:
+Desktop frame:
 - 1920 x 760
+
+Mobile frame:
+- [complete mobile frame size from Figma]
 
 Layout:
 - Full-width hero section
-- Left side background: #F9F9F9
-- Right side background panel: #FFD900
+- Main background: #F9F9F9
+- Right/center yellow background panel: #FFD900
 - Decorative circle on left side
 - Decorative circle on right side
+- Mobile-first build
 
-Navigation:
+Desktop navigation:
 - Logo: 138 x 62
 - Items:
   - About Us: 66 x 17
@@ -24,11 +28,23 @@ Navigation:
   - Shop: 37 x 17
   - Subscription: 89 x 17
 
-Main content:
+Mobile navigation:
+- Logo: 88.91 x 40
+- Burger icon: 25 x 17.56
+
+Desktop content:
 - Title block: 437 x 272
 - Description block: 459 x 78
 - CTA button: 215 x 40
 - Countdown card: 629 x 321
+
+Mobile content:
+- Title block: 281 x 192
+- Small text block under title: 281 x 19
+- Countdown card: 281 x 159
+- Description block: 281 x 104
+- CTA button: 215 x 40
+- Yellow panel/content area: 222 x 222
 
 Text:
 - Title: Chicago’s Free Medical Check-Up and Weight Loss Consultation
@@ -88,31 +104,36 @@ Fonts:
 
 Colors:
 - Main background: #F9F9F9
-- Right panel background: #FFD900
+- Yellow panel background: #FFD900
 - Accent color (title highlight + button): #DD71C6
 
 Decorative elements:
-- Right ellipse:
+- Desktop right ellipse:
   - Size: 436 x 436
   - Position: top 123px, left 1651px
   - Opacity: 0.15
   - Border width: 28px
 
-- Left ellipse:
+- Desktop left ellipse:
   - Size: 386 x 386
   - Position: top 187px, left -91px
   - Opacity: 1
   - Border width: 28px
 
+- Mobile decorative circles:
+  - [complete if needed]
+
 Functionality:
 - Countdown
-- Burger menu on tablet/mobile
+- Burger menu on mobile/tablet
 
 Notes:
 - Full-width composition
-- Right yellow panel is part of the hero layout
-- Countdown overlaps visually with the yellow panel
 - Desktop navigation is horizontal
+- Mobile navigation uses burger menu
+- In mobile, content is stacked vertically
+- Countdown card appears below title area
+- Yellow panel remains part of the hero layout in mobile
 
 
 ==================================================
