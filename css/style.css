@@ -99,7 +99,7 @@ body {
 	top: -85px;           /* bleed to top of section */
 	right: -20px;         /* bleed to right edge */
 	width: 60%;
-	bottom: -50px;        /* bleed to bottom of section */
+	bottom: -70px;        /* bleed to bottom of section */
 	background: #ffd900;
 	border-top-left-radius: 48px;
 	z-index: 0;
@@ -157,7 +157,6 @@ body {
     box-shadow: 0px 4px 40px 0px #0000001A;
 	border-radius: 20px;
 	padding: 26px 36px 26px 36px;
-    gap: 10px;
 	margin: 0 auto 18px;
 }
 
@@ -181,7 +180,6 @@ body {
 	font-size: 8px;
 	color: #1691e2;
     line-height: 178%;
-	letter-spacing: 32.5%;
 	text-transform: uppercase;
 	font-weight: 500;
 }
@@ -197,23 +195,23 @@ body {
 /* ─── DESCRIPTION ─────────────────────────────────── */
 .descripcion-hero {
 	max-width: 281px;
-    margin-top: 15px;
+    margin: 0 0 30px 15px;
 	font-size: 14px;
 	line-height: 1.6;
 	color: #2f2f2f;
 }
 
-/* ─── CTA BUTTON ─────────────────────────────────── */
-.boton-principal {
-	display: inline-block;
-	margin-top: 20px;
-    gap: 10px;
+/* ─── CTA BUTTON (Base & Variants) ─────────────────────────────────── */
+.boton-principal,
+.boton-estadisticas,
+.boton-ayuda {
+	display: block;
+	margin: 0 auto;
 	width: 215px;
 	text-align: center;
-	background: #dd71c6;
-    box-shadow: 0px 4px 20px 0px #0000001A;
-	color: #fff;
+	box-shadow: 0px 4px 20px 0px #0000001A;
 	text-decoration: none;
+	color: #ffffff;
 	font-weight: 600;
 	font-size: 15px;
 	padding: 10px 14px 10px 14px;
@@ -221,7 +219,24 @@ body {
 	transition: background 0.2s ease;
 }
 
+.boton-principal {
+	background: #dd71c6;
+}
+
 .boton-principal:hover {
+	background: #c957b0;
+}
+
+.boton-estadisticas {
+	margin: 30px auto 0;
+	background: #FFD900;
+}
+
+.boton-ayuda {
+	background: #dd71c6;
+}
+
+.boton-ayuda:hover {
 	background: #c957b0;
 }
 
@@ -304,180 +319,132 @@ body {
 
 .texto-estadistica {
 	font-size: 12px;
-    text-align:center;
 	line-height: 158%;
 	color: #333333;
 }
 
-.boton-estadisticas {
-	display: block;
-	margin: 20px auto 0;
-    gap: 10px;
-	width: 215px;
-	text-align: center;
-	background: #FFD900;
-    box-shadow: 0px 4px 20px 0px #0000001A;
-	color: #fff;
-	text-decoration: none;
-	font-weight: 600;
-	font-size: 15px;
-	padding: 10px 14px 10px 14px;
-	border-radius: 4px;
-	transition: background 0.2s ease;
+
+
+/* ─── CONSULTA SECTION ─────────────────────────────── */
+.seccion-consulta {
+	position: relative;
+	overflow: hidden;
+	background: #73c3f4;
+	padding: 28px 20px 0;
 }
 
-/* ─── DESKTOP (992px+) ─────────────────────────────── */
-@media (min-width: 992px) {
-	.contenedor-hero {
-		padding: 26px 32px 64px;
-	}
+.fondo-consulta {
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+}
 
-	.logo {
-		width: 138px;
-	}
+.circulo-consulta {
+	position: absolute;
+	border-radius: 50%;
+	border: 28px solid rgba(255, 255, 255, 0.15);
+}
 
-	.menu-desktop {
-		display: block;
-	}
+.circulo-consulta-der {
+	width: 336px;
+	height: 336px;
+	right: -235px;
+	top: 38px;
+}
+.contenedor-consulta {
+	max-width: 375px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
-	.lista-menu {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		display: flex;
-		gap: 22px;
-	}
+.contenido-consulta {
+	width: 100%;
+	max-width: 281px;
+}
 
-	.lista-menu a {
-		text-decoration: none;
-		color: #2f2f2f;
-		font-size: 14px;
-		font-weight: 500;
-	}
+.bloque-consulta {
+	margin-bottom: 42px;
+}
 
-	.boton-menu {
-		display: none;
-	}
+.titulo-consulta {
+	margin: 40px 0 8px;
+	font-family: Libre Baskerville;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 160%;
+	color: #ffffff;
+}
 
-	.contenido-hero {
-		margin-top: 48px;
-	}
+.texto-consulta {
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 160%;
+	color: #ffffff;
+}
 
-	.bloque-texto {
-		align-items: flex-start;
-		text-align: left;
-	}
+.imagen-consulta {
+	transform: translateX(-12px);
+}
 
-	.panel-amarillo {
-		top: 0;
-		right: -32px;
-		bottom: -64px;
-		width: 48%;
-	}
+/* ─── AYUDA SECTION ─────────────────────────────────── */
+.seccion-ayuda {
+	position: relative;
+	overflow: hidden;
+	background: #ffffff;
+	padding: 40px;
+}
+.circulo-ayuda-sup {
+	position: absolute;
+	width: 289px;
+	height: 289px;
+	border: 20px solid #f9f9f9;
+	border-radius: 50%;
+	left: 204px;
+	top: 60px;
+}
 
-	.circulo-dos {
-		width: 220px;
-		height: 220px;
-		right: -80px;
-		top: 130px;
-	}
+.contenedor-ayuda {
+	width: 100%;
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.bloque-ayuda {
+	width: 100%;
+	max-width: 281px;
+	margin-bottom: 28px;
+	text-align: center;
+}
+.titulo-ayuda {
+	margin: 0 0 16px;
+	font-family: Libre Baskerville;
+	font-weight: 400;
+	font-size: 24px;
+	text-align: left;
+	line-height: 160%;
+	letter-spacing: 0%;
+	color: #333333;
+}
 
-	.titulo-principal {
-		max-width: 640px;
-		font-size: 64px;
-	}
+.texto-ayuda {
+	margin: 12px 0;
+	font-family: Montserrat;
+	font-weight: 400;
+	font-style: Regular;
+	font-size: 16px;
+	text-align: left;
+	line-height: 170%;
+	letter-spacing: 0%;
+	color: #333333;
+}
 
-	.texto-cupos {
-		font-size: 36px;
-	}
-
-	.tarjeta-tiempo {
-		max-width: 520px;
-		padding: 24px 20px;
-		border-radius: 28px;
-	}
-
-	.etiqueta-tiempo {
-		font-size: 24px;
-		margin-bottom: 18px;
-	}
-
-	.unidad-tiempo {
-		font-size: 12px;
-		letter-spacing: 2px;
-	}
-
-	.valor-tiempo {
-		font-size: 36px;
-		margin-top: 8px;
-	}
-
-	.descripcion-hero {
-		max-width: 520px;
-		margin: 0 0 24px;
-		font-size: 18px;
-	}
-
-	.boton-principal {
-		font-size: 16px;
-		padding: 14px 20px;
-	}
-
-	.seccion-estadisticas {
-		padding: 80px 32px 72px;
-	}
-
-	.contenedor-estadisticas {
-		max-width: 1160px;
-	}
-
-	.grilla-estadisticas {
-		grid-template-columns: repeat(4, 1fr);
-		gap: 24px;
-		justify-content: stretch;
-	}
-
-	.tarjeta-estadistica {
-		width: auto;
-		height: auto;
-		min-height: 264px;
-		border-radius: 28px;
-		padding: 18px 12px 16px;
-		justify-content: center;
-		gap: 0;
-	}
-
-	.icono-estadistica {
-		width: 34px;
-		height: 34px;
-		margin-bottom: 14px;
-	}
-
-	.numero-estadistica {
-		font-size: 50px;
-	}
-
-	.texto-estadistica {
-		font-size: 18px;
-	}
-
-	.boton-estadisticas {
-		margin: 34px auto 0;
-	}
-
-	.circulo-estadistica-izq {
-		width: 185px;
-		height: 185px;
-		left: -92px;
-		top: 22%;
-	}
-
-	.circulo-estadistica-der {
-		width: 306px;
-		height: 308px;
-		left: auto;
-		right: -153px;
-		top: 42%;
-	}
-
+.imagen-ayuda-equipo img {
+	width: 100%;
 }
