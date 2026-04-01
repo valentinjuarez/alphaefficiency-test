@@ -29,12 +29,12 @@
                         </ul>
                     </nav>
 
-                    <button class="boton-menu" type="button">
+                    <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu-movil-principal" aria-label="Open navigation menu">
                         <img src="assets/menu.png" alt="" width="25" height="18">
                     </button>
                 </header>
 
-                <nav class="menu menu-movil">
+                <nav class="menu menu-movil" id="menu-movil-principal" aria-label="Mobile navigation">
                     <ul class="lista-menu">
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Book Online</a></li>
@@ -59,19 +59,19 @@
                             <div class="grilla-tiempo">
                                 <div class="item-tiempo">
                                     <span class="unidad-tiempo">Days</span>
-                                    <span class="valor-tiempo">00</span>
+                                    <span class="valor-tiempo" id="countdown-dias">00</span>
                                 </div>
                                 <div class="item-tiempo">
                                     <span class="unidad-tiempo">Hours</span>
-                                    <span class="valor-tiempo">16</span>
+                                    <span class="valor-tiempo" id="countdown-horas">16</span>
                                 </div>
                                 <div class="item-tiempo">
                                     <span class="unidad-tiempo">Minutes</span>
-                                    <span class="valor-tiempo">29</span>
+                                    <span class="valor-tiempo" id="countdown-minutos">29</span>
                                 </div>
                                 <div class="item-tiempo">
                                     <span class="unidad-tiempo">Seconds</span>
-                                    <span class="valor-tiempo">27</span>
+                                    <span class="valor-tiempo" id="countdown-segundos">27</span>
                                 </div>
                             </div>
                         </section>
@@ -312,6 +312,82 @@ They want us to eat like a pigeon, avoid all the things we love to eat and work 
                 </div>
             </div>
         </section>
+
+        <footer class="seccion-footer">
+            <div class="contenedor-footer">
+                <a class="logo-link" href="#">
+                    <img src="assets/Group 45.png" alt="Better Weigh Medical Center" width="138" height="62">
+                </a>
+
+                <p class="footer-descripcion">
+                    A Better Weigh Medical Weight Loss Center offers a weight loss program dedicated to helping you achieve long term weight loss success with the use of FDA approved medication.
+                </p>
+
+                <section class="bloque-contacto">
+                    <h2>
+                        <img src="assets/ubIcon.png" alt="Location" width="18" height="18">
+                        Head Office:
+                    </h2>
+                    <p>1931 W 95th Street Chicago IL, 60643</p>
+                </section>
+
+                <section class="bloque-contacto">
+                    <h2>
+                        <img src="assets/telIcon.png" alt="Phone" width="18" height="18">
+                        Phone:
+                    </h2>
+                    <p>773-496-4222</p>
+                </section>
+
+                <nav class="footer-nav footer-nav-about" aria-label="About">
+                    <h2>About</h2>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Book Online</a></li>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Real Patient Stories</a></li>
+                        <li><a href="#">Weight Loss Programs</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-nav footer-nav-more" aria-label="More Links">
+                    <h2>More Links</h2>
+                    <ul>
+                        <li><a href="#">Franchise Opportunities</a></li>
+                        <li><a href="#">Career Opportunities</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-nav footer-nav-social" aria-label="Social Media">
+                    <ul>
+                        <li>
+                            <a href="#" aria-label="Instagram">
+                                <img src="assets/igIcon.png" alt="Instagram" width="24" height="24">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Twitter">
+                                <img src="assets/twIcon.png" alt="Twitter" width="24" height="24">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Facebook">
+                                <img src="assets/fbIcon.png" alt="Facebook" width="24" height="24">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <span class="footer-circulo-decorativo" aria-hidden="true"></span>
+                <p class="footer-copy">Copyright by A Better Weigh Inc. All rights reserved.</p>
+            </div>
+        </footer>
     </main>
+    <script src="js/menu-hamburguesa.js"></script>
+    <script src="js/faq-accordion.js"></script>
+    <script src="js/countdown.js"></script>
 </body>
 </html>

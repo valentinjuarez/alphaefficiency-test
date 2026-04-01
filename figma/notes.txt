@@ -1,194 +1,227 @@
 ==================================================
-SECTION 1 — MAIN SECTION
+DOCUMENTACION DEL PROYECTO (VERSION ACTUAL)
 ==================================================
 
-Desktop frame:
-- 1920 x 760
-
-Mobile frame:
-- [complete mobile frame size from Figma]
-
-Layout:
-- Full-width hero section
-- Main background: #F9F9F9
-- Right/center yellow background panel: #FFD900
-- Decorative circle on left side
-- Decorative circle on right side
-- Mobile-first build
-
-Desktop navigation:
-- Logo: 138 x 62
-- Items:
-  - About Us: 66 x 17
-  - Book Online: 87 x 17
-  - Weight Loss Programs: 159 x 17
-  - Real Patient Stories: 137 x 17
-  - Locations: 68 x 17
-  - Blog: 33 x 17
-  - Shop: 37 x 17
-  - Subscription: 89 x 17
-
-Mobile navigation:
-- Logo: 88.91 x 40
-- Burger icon: 25 x 17.56
-
-Desktop content:
-- Title block: 437 x 272
-- Description block: 459 x 78
-- CTA button: 215 x 40
-- Countdown card: 629 x 321
-
-Mobile content:
-- Title block: 281 x 192
-- Small text block under title: 281 x 19
-- Countdown card: 281 x 159
-- Description block: 281 x 104
-- CTA button: 215 x 40
-- Yellow panel/content area: 222 x 222
-
-Text:
-- Title: Chicago’s Free Medical Check-Up and Weight Loss Consultation
-- Description: Limited spots available due to the Physicians schedule and the high demand for service. No credit card or insurance required.
-- Button text: Book my appointment
-- Countdown label: Your offer ends in:
-- Countdown units:
-  - Days
-  - Hours
-  - Minutes
-  - Seconds
-
-Fonts:
-- Nav:
-  - Font: Montserrat
-  - Weight: 400
-  - Size: 14px
-  - Line-height: 100%
-
-- Title:
-  - Font: Libre Baskerville
-  - Weight: 400
-  - Size: 45px
-  - Line-height: 150%
-
-- Countdown label:
-  - Font: Montserrat
-  - Weight: 400
-  - Size: 18px
-  - Line-height: 158%
-  - Align: center
-
-- Countdown unit text:
-  - Font: Montserrat
-  - Weight: 500
-  - Size: 18px
-  - Line-height: 178%
-  - Letter-spacing: 32.5%
-  - Align: center
-
-- Countdown numbers:
-  - Font: Montserrat
-  - Size: 50px
-
-- Description:
-  - Font: Montserrat
-  - Weight: 400
-  - Size: 16px
-  - Line-height: 160%
-
-- Button:
-  - Font: Montserrat
-  - Weight: 600
-  - Size: 16px
-  - Line-height: 100%
-  - Align: center
-
-Colors:
-- Main background: #F9F9F9
-- Yellow panel background: #FFD900
-- Accent color (title highlight + button): #DD71C6
-
-Decorative elements:
-- Desktop right ellipse:
-  - Size: 436 x 436
-  - Position: top 123px, left 1651px
-  - Opacity: 0.15
-  - Border width: 28px
-
-- Desktop left ellipse:
-  - Size: 386 x 386
-  - Position: top 187px, left -91px
-  - Opacity: 1
-  - Border width: 28px
-
-- Mobile decorative circles:
-  - [complete if needed]
-
-Functionality:
-- Countdown
-- Burger menu on mobile/tablet
-
-Notes:
-- Full-width composition
-- Desktop navigation is horizontal
-- Mobile navigation uses burger menu
-- In mobile, content is stacked vertically
-- Countdown card appears below title area
-- Yellow panel remains part of the hero layout in mobile
+Resumen general
+- Proyecto maquetado con enfoque mobile-first.
+- Tecnologias usadas: HTML, CSS y JavaScript vanilla.
+- Estructura principal en index.html, estilos en css/style.css y logica JS separada en 3 archivos.
+- Secciones implementadas: Hero, Estadisticas, Consulta, Ayuda, Que Recibes, FAQ y Footer.
 
 
 ==================================================
-SECTION 2 — STATS SECTION
+1) ESTRUCTURA Y ARCHIVOS
 ==================================================
 
-Frame:
-- 1920 x 570
+Archivos principales
+- index.html
+- css/style.css
+- js/menu-hamburguesa.js
+- js/countdown.js
+- js/faq-accordion.js
 
-Layout:
-- Full-width section
-- Main background: #DD71C6
-- Decorative circle on left side
-- Decorative circle on right side
-- Four centered stat cards in a horizontal row
-- CTA button below the cards
+Recursos
+- assets/ para imagenes e iconos.
+- Tipografias desde Google Fonts:
+  - Libre Baskerville
+  - Montserrat
 
-Main content:
-- 4 stat cards: 249 x 264 each
-- CTA button: 215 x 40
+Convenciones
+- Nombres de clases en espanol.
+- Variables CSS en :root para colores, sombras, radios y anchos base.
+- Layout responsive por seccion, con uso de clamp(), min() y max-width.
 
-Cards:
-- Card 1:
-  - Icon: briefcase
-  - Main text: 10+
-  - Description: years in business
 
-- Card 2:
-  - Icon: smile
-  - Main text: 2000+
-  - Description: positive reviews
+==================================================
+2) HERO (SECCION PRINCIPAL)
+==================================================
 
-- Card 3:
-  - Icon: chat / message
-  - Main text: 15.000+
-  - Description: satisfied clients
+Objetivo visual
+- Composicion dividida en dos paneles:
+  - lado izquierdo claro
+  - lado derecho amarillo
+- El panel amarillo queda en proporcion 50/50 respecto al ancho disponible.
+- Circulo decorativo sobre el panel amarillo.
 
-- Card 4:
-  - Icon: heartbeat / medical line
-  - Main text: Many+
-  - Description: nurses and physician assistants on staff
+Contenido
+- Titulo principal con palabra destacada en rosa.
+- Texto de cupos limitados.
+- Tarjeta de countdown.
+- Texto descriptivo.
+- Boton CTA: Book my appointment.
 
-Text:
-- Button text: Book my appointment
+Ajustes importantes realizados
+- Correccion de salto visual entre anchos 407/408.
+- Correccion del corte entre Hero y seccion 2:
+  - el contenedor del Hero usa min-height: 100svh para mantener continuidad.
+- Panel amarillo configurado para mantener mitad y mitad:
+  - width: 50%
+  - anclado al lado derecho.
 
-Decorative elements:
-- Left ellipse block: 185 x 185
-- Right ellipse block: 306x308
 
-Functionality:
-- CTA button
-- Responsive card layout for tablet/mobile
+==================================================
+3) MENU NAVEGACION (DESKTOP + MOBILE)
+==================================================
 
-Notes:
-- Cards are aligned horizontally on desktop
-- Button is centered below the cards
-- Decorative circles are part of the section background
-- On smaller screens, cards will likely stack or wrap
+Desktop
+- Menu horizontal visible desde 1024px.
+- Boton hamburguesa oculto en desktop.
+
+Mobile
+- Menu tipo dropdown (no pantalla completa).
+- Se abre con animacion leve (opacity + translateY).
+- Estilo de panel con borde, sombra y radio.
+
+Accesibilidad
+- Boton con aria-expanded y aria-controls.
+- Etiqueta dinamica del boton (abrir/cerrar menu).
+
+Comportamientos implementados
+- Abre y cierra al tocar el boton.
+- Cierra al tocar un enlace del menu.
+- Cierra con tecla Escape.
+- Cierra al pasar a breakpoint desktop.
+- Cierra al hacer click fuera del menu.
+- Bloquea scroll del body cuando el menu esta abierto.
+
+
+==================================================
+4) COUNTDOWN
+==================================================
+
+Objetivo
+- Contador regresivo funcional en tiempo real.
+
+Implementacion
+- Funcion initCountdown() en js/countdown.js.
+- Actualizacion cada 1 segundo con setInterval.
+- Renderiza 4 unidades:
+  - dias
+  - horas
+  - minutos
+  - segundos
+- Formato de dos digitos (00).
+- Al llegar a 0:
+  - se clava en 00
+  - se limpia el intervalo
+
+Robustez agregada
+- Uso de IDs en espanol en el HTML:
+  - countdown-dias
+  - countdown-horas
+  - countdown-minutos
+  - countdown-segundos
+
+
+==================================================
+5) FAQ (ACORDEON)
+==================================================
+
+Objetivo
+- Preguntas desplegables con texto placeholder.
+
+Implementacion
+- Funcion initFaqAccordion() en js/faq-accordion.js.
+- Cada item FAQ puede abrir/cerrar su respuesta.
+- Comportamiento tipo acordeon:
+  - al abrir uno, se cierra el anterior.
+- Si no existe respuesta en HTML, se crea automaticamente con texto lorem ipsum.
+
+Accesibilidad
+- Botones con aria-expanded.
+- Respuestas con aria-hidden y relacion aria-controls.
+
+Estilos agregados
+- Panel de respuesta con transicion suave de max-height y opacity.
+- Rotacion del icono (chevron) cuando el item esta abierto.
+
+
+==================================================
+6) SECCION ESTADISTICAS
+==================================================
+
+Objetivo
+- Bloque con fondo rosa, tarjetas y CTA.
+
+Estado actual
+- Grid de tarjetas implementado y responsive.
+- Icono + numero + descripcion en cada tarjeta.
+- Boton CTA centrado.
+- Elementos decorativos de fondo en ambos lados.
+
+
+==================================================
+7) OTRAS SECCIONES DE CONTENIDO
+==================================================
+
+Consulta
+- Texto explicativo + imagen.
+- Fondo azul con circulo decorativo.
+
+Ayuda
+- Bloques de texto + imagen.
+- Fondo claro y composicion centrada mobile-first.
+
+Que Recibes
+- Tarjetas informativas con listas.
+- Encabezado y CTA final de seccion.
+
+Footer
+- Estructura simplificada con clases claras.
+- Sin selectores complejos tipo first-of-type/last-of-type/atributos avanzados.
+- Bloques de contacto, navegacion y redes con estilos directos.
+
+
+==================================================
+8) RESPONSIVE (RANGO OBJETIVO)
+==================================================
+
+Objetivo del challenge
+- Cobertura desde 320px hasta 1920px.
+
+Estado
+- Base mobile-first ya implementada.
+- Se corrigieron deformaciones criticas en anchos intermedios del Hero.
+- Se mejoro consistencia del panel amarillo en cambios finos de viewport.
+
+Recomendacion para cierre final
+- Validar visualmente en estos anchos:
+  - 320, 375, 390, 407, 408, 430, 768, 1024, 1280, 1440, 1920.
+
+
+==================================================
+9) LOGICA JS ACTUAL
+==================================================
+
+Inicializacion
+- Cada modulo se inicializa por separado con DOMContentLoaded:
+  - initBurgerMenu() en js/menu-hamburguesa.js
+  - initCountdown() en js/countdown.js
+  - initFaqAccordion() en js/faq-accordion.js
+
+Eventos clave
+- click, resize, keydown para menu.
+- interval para countdown.
+- click por item para FAQ.
+
+
+==================================================
+10) CHECKLIST DE ENTREGA (CASI FINAL)
+==================================================
+
+Completado
+- Burger menu responsive y accesible.
+- Countdown funcional.
+- FAQ desplegable con placeholder y transicion.
+- Ajustes visuales de Hero y panel amarillo.
+- Footer simplificado con CSS basico.
+
+Pendiente sugerido
+- Pasada final de QA manual en todos los breakpoints objetivo.
+- Revisar que no haya overflow horizontal en ningun ancho.
+- Opcional: reemplazar lorem ipsum por respuestas reales del negocio.
+
+
+==================================================
+FIN DE DOCUMENTACION
+==================================================
