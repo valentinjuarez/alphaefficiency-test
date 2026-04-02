@@ -405,6 +405,7 @@ button:focus-visible,
 }
 
 .boton-principal,
+.boton-estadisticas,
 .boton-ayuda {
 	color: #ffffff;
 }
@@ -425,11 +426,11 @@ button:focus-visible,
 	filter: brightness(0.97);
 }
 
-.boton-estadisticas {
+a.boton-estadisticas {
 	margin-top: clamp(24px, 8vw, 30px);
 	background: var(--color-yellow);
+	text-decoration: none;
 }
-
 .boton-ayuda {
 	background: var(--color-pink);
 }
