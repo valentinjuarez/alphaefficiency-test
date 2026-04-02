@@ -216,10 +216,9 @@ Completado
 - Ajustes visuales de Hero y panel amarillo.
 - Footer simplificado con CSS basico.
 
-Pendiente sugerido
+Pendiente 
 - Pasada final de QA manual en todos los breakpoints objetivo.
 - Revisar que no haya overflow horizontal en ningun ancho.
-- Opcional: reemplazar lorem ipsum por respuestas reales del negocio.
 
 
 ==================================================
